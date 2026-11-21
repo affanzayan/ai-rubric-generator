@@ -42,7 +42,7 @@ if st.button("✨ Generate Rubric", use_container_width=True):
             try:
                 # Call the Groq API (using Llama 3 70B, which is free and incredibly fast)
                 response = client.chat.completions.create(
-                    model="llama3-70b-8192", 
+                    model="llama-3.3-70b-versatile",
                     messages=[{"role": "user", "content": prompt}],
                     temperature=0.7
                 )
